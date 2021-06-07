@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Demi</title>
+</head>
+
+<body class="bg ">
+    <div class="lengths"></div>
+    <script>
+        let w = 0, h = 0;
+        w = window.innerWidth;
+        h = window.innerHeight;
+        document.querySelector(".lengths").innerHTML = "Width: " + w + "<br>Height: " + h;
+        window.addEventListener("resize", () => {
+            w = window.innerWidth;
+            h = window.innerHeight;
+            document.querySelector(".lengths").innerHTML = "Width: " + w + "<br>Height: " + h;
+        })
+    </script>
+    <!--Меню навигации-->
+    <nav class="navbar navbar-expand-lg  navbar-dark menu ">
+        <div class=" container-fluid">
+            <img class="header__logo navbar-brand" src="img/img/logo_1.svg" alt="логотип" aria-label="логотип сайта">
+
+            <button class="navbar-toggler bg-secondary " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-transparent"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class=" ">
+                        <a class="active menu__list_item" aria-current="page" href="#projects">ПРОЕКТЫ</a>
+                    </li>
+                    <li class="">
+                        <a class=" menu__list_item " href="#cases">КЕЙСЫ</a>
+                    </li>
+                    <li class=" ">
+                        <a class="menu__list_item" href="#news">DEMI В НОВОСТЯХ</a>
+                    </li>
+                    <li class=" ">
+                        <a class="menu__list_item" href="#contacts">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Конец меню навигации-->
+    <div class="container-fluid">
+        <!--РАЗРАБОТКА РЕШЕНИЙ В AR И VR-->
+        <section class="solution-dev">
+            <img class="solution-dev__logo" src="img/img/logo_2.svg">
+            <h1 class="solution-dev__heading">РАЗРАБОТКА<br>РЕШЕНИЙ В AR И VR</h1>
+            <p class="solution-dev__text">Помогаем оживить Ваш бренд</p>
+            <p class="solution-dev__text">Создаем развлекательные материал (AR, VR)</p>
+            <p class="solution-dev__text">Обучаем персонал в виртуальной реальности</p>
+            <button class="solution-dev__button">УЗНАТЬ БОЛЬШЕ</button>
+            <div>
+                <ul class="solution-dev__socials">
+                    <li><a href="https://www.facebook.com/demistudio.ua/" target="_blank" class="solution-dev__socials_facebook"><img src="img/img/fb-svg.svg"
+                                alt="facebook" height="40"></a></li>
+                    <li><a href="https://www.instagram.com/demistudio.ua" target="_blank" class="solution-dev__socials_instagram"><img src="img/img/inst-svg.svg"
+                                alt="instagram" height="40"></a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Конец РАЗРАБОТКА РЕШЕНИЙ В AR И VR-->
+        <!--ЧТО ТАКОЕ AR И VR?-->
+        <section class="terms">
+            <h2 class="terms__heading">ЧТО ТАКОЕ AR И VR?</h2>
+            <p class="terms__ar-vr terms__ar-vr_ar">Технология дополненной реальности (Augmented Reality, <span>AR</span>)<br>
+                позволяет "накладывать" виртуальный контент на реальный мир.<br>
+                С помощью таких цифровых подсказок можно, например, быстро<br>
+                найти нужный продукт в супермаркете, узнать, как собрать <br>
+                новую модель, или научиться пользоваться спутниковым<br>
+                навигатором в автомобиле.</p>
+            <p class="terms__ar-vr">Виртуальная реальность (Virtual Reality, <span>VR</span>) - это общий<br>
+                термин для контента, который можно воспроизводить<br>
+                с помощью шлемов виртуальной реальности,<br>
+                смартфонов и других цифровых устройств.
+            </p>
+        </section>
+        <!-- Конец ЧТО ТАКОЕ AR И VR?-->
+    </div>
+    <!--Почему Мы?-->
+    <section style="margin-bottom: -220px;">
+        <div class="whyweare">
+            <h2 class="whyweare__heading">ПОЧЕМУ МЫ?</h2>
+            <div class="whyweare__group">
+                <div>
+                    <figure class="whyweare__group_block">
+                        <p class="whyweare__group_img"><img src="img/img/price.svg"></p>
+                        <button class="whyweare__group_button">цена</button>
+                        <figcaption class="whyweare__group_text">Цены за разроботку проекта стартуют от 2000$
+                        </figcaption>
+                    </figure>
+                    <figure class="whyweare__group_block">
+                        <p class="whyweare__group_img"><img src="img/img/team.svg" height="200px"></p>
+                        <button class="whyweare__group_button">команда</button>
+                        <figcaption class="whyweare__group_text">В нашей команде есть 3-D художники разных направлений,
+                            UI/UX-дизайнеры, програмисты и 2-D художники
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="whyweare__group_block">
+                        <p class="whyweare__group_img"><img src="img/img/timing.svg" height="200px"></p>
+                    <button class="whyweare__group_button">сроки</button>
+                    <figcaption class="whyweare__group_text">Работа осуществляется в 3 этапа, со сроками от одного
+                        месяца
+                    </figcaption>
+                </figure>
+                <figure class="whyweare__group_block">
+                    <p class="whyweare__group_img"><img src="img/img/decision.svg" height="200px"></p>
+                    <button class="whyweare__group_button">решение</button>
+                    <figcaption class="whyweare__group_text">У нас есть готовы решения, не нужно реализовывать до
+                        70% функционала
+                    </figcaption>
+                </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Конец Почему Мы?-->
+    <div class="container-md">
+
+        <section class="test">
+            <div class="center">
+                <div class="slick-slider__test"><img src="img/img/1.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/2.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/3.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/4.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/5.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/6.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/7.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/8.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/9.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/10.jpeg"></div>
+                <div class="slick-slider__test"><img src="img/img/11.jpeg"></div>
+                <div class="slick-slider__test"><img src="img/img/12.jpeg"></div>
+                <div class="slick-slider__test"><img src="img/img/13.jpeg"></div>
+                <div class="slick-slider__test"><img src="img/img/14.jpeg"></div>
+                <div class="slick-slider__test"><img src="img/img/15.jpeg"></div>
+                <div class="slick-slider__test"><img src="img/img/16.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/19.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/21.png"></div>
+                <div class="slick-slider__test"><img src="img/img/22.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/23.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/24.jpg"></div>
+                <div class="slick-slider__test"><img src="img/img/25.png"></div>
+                <div class="slick-slider__test"><img src="img/img/26.png"></div>
+                <div class="slick-slider__test"><img src="img/img/27.png"></div>
+            </div>
+        </section>
+
+        <!--Мы создаем сервисы-->
+        <section class="services">
+            <h2 class="services__heading">МЫ СОЗДАЁМ СЕРВИСЫ</h2>
+            <p class="services__button">AR</p>
+            <div class="services__name">
+                <div>
+                    <div class="services__name_block">
+                        <h3 class="services__name_heading">Уникальное приложение</h3>
+                        <p class="services__name_text">
+                            Персональное мобильное приложение - это ваша собственная
+                            платформа для уникального AR-контента, а также новый канал связи.
+                            Приложение лучше всего подходит для длительных
+                            проектов и кампаний, которые в будущем можно расширять.
+                        </p>
+                    </div>
+
+                    <div class="services__name_block">
+                        <h3 class="services__name_heading">AR для социальных сетей</h3>
+                        <p class="services__name_text">
+                            Social Media AR - это популярные и востребованные маски для
+                            Instagram и Facebook. На платформах появляется все больше и больше контента, поскольку
+                            пользователи являются основными создателями трендов.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="services__name_block">
+                        <h3 class="services__name_heading">Web AR</h3>
+                        <p class="services__name_text">Web AR - один из самых популярных способов воспроизведения
+                            контента AR в наши дни. Это позволяет вам видеть опыт прямо через браузер на телефоне,
+                            что
+                            устраняет входной барьер для установки приложений.
+                        </p>
+                    </div>
+
+                    <div class="services__name_block">
+                        <h3 class="services__name_heading">Big Screen AR</h3>
+                        <p class="services__name_text">Раздевалки, телепорты, игры и все остальное внутри большого
+                            экрана - благодаря простой камере слежения. Превратите его в площадку для
+                            взаимодействия,
+                            которая не только продвигает ваш продукт, но и превращает клиентов в персонажей
+                            рассказа.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll(".services__name_block").forEach(item => item.addEventListener("click", function() {
+                w = window.innerWidth;
+                if (w < 400) {
+                    if (item.children[1].classList.contains("services__name_text-active")) item.children[1].classList.remove("services__name_text-active"); 
+                    else  {
+                        document.querySelectorAll(".services__name_block").forEach(newitem => {
+                            newitem.children[1].classList.remove("services__name_text-active");
+                        });
+                        item.children[1].classList.add("services__name_text-active");
+                    }
+                }
+            }));
+        </script>
+        <section class="services-vr">
+            <h2 class="services-vr__heading">МЫ СОЗДАЁМ СЕРВИСЫ</h2>
+            <p class="services-vr__button">VR</p>
+            <div class="services-vr__info">
+                <h3 class="services-vr__info_name">Уникальные VR приложения</h3>
+                <p class="services-vr__info_text">
+                    Разработка приложений, рекламы, образовательных проектов и туров
+                    под виртуальную реальность.
+                    Лучше всего подходит для создания захватывающих впечатлений и многопользовательских задач.
+                    Масштабируйте и обновляйте свои решения по мере изменения ваших потребностей - мы всегда рядом,
+                    чтобы сделать ваш бизнес еще лучше.Разработка приложений, рекламы, образовательных проектов и
+                    туров под виртуальную реальность. Лучше всего подходит для создания захватывающих впечатлений и
+                    многопользовательских задач. Масштабируйте и обновляйте свои решения по мере изменения ваших
+                    потребностей - мы всегда рядом, чтобы сделать ваш бизнес еще лучше.
+                </p>
+            </div>
+        </section>
+        <!--конец Мы создаем сервисы-->
+    </div>
+    <!--Готовые решения-->
+    <section class="solutions">
+        <h2 class="solutions__heading">ГОТОВЫЕ РЕШЕНИЯ</h2>
+        <p class="solutions__info">
+            У нас вы сможете купить полностью готовые
+            кейсы, со всевозможными проработанными деталями.
+            Это выгоднее, чем разработка каждого отдельного элемента</p>
+        <ul class="solutions__list">
+            <li class="solutions__list_item">AR для фотозон</li>
+            <li class="solutions__list_item">AR для презентаций</li>
+            <li class="solutions__list_item">AR для ивентов</li>
+            <li class="solutions__list_item">AR/VR Визуализация<br>зданий внутри и снаружи</li>
+            <li class="solutions__list_item">VR Обучение персонала</li>
+            <li class="solutions__list_item">Интерактивные выставки, музеи</li>
+        </ul>
+    </section>
+    <!--Конец Готовые решения-->
+    <div class="container-fluid">
+        <section class="projects">
+            <a name="projects"></a>
+            <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+            <div class="projects__content">
+                <div class="projects__phones">
+                    <p class="projects__phones_phone-small"><img src="img/img/phone1.svg"></p>
+                    <p class="projects__phones_phone-mid"><img src="img/img/phone2.svg"></p>
+                    <p class="projects__phones_phone-small"><img src="img/img/phone3.svg"></p>
+                </div>
+                <div class="projects__info">
+                    <h3 class="projects__info_heading">"NOOPLANETARIUM AR"</h3>
+                    <span class="projects__info_info">AR-ПРИЛОЖЕНИЕ</span>
+                    <div class="projects__info_buttons">
+                        <a class="projects__info_button" href="https://apps.apple.com/ua/app/nooplanet-ar/id1547172115"><img src="img/img/ios.svg"></a>
+                        <a class="projects__info_button" href="https://play.google.com/store/apps/details?id=com.Demi.NooPlanetarium&hl=ru"><img src="img/img/android.svg"></a>
+                    </div>
+                    <p class="projects__info_text">
+                        NooPlanetarium AR - бесплатное приложение, с помощью которого вы
+                        можете оживить стену
+                        "История развития астрономии и исследования космоса"
+                        в Днепровском Планетарии и путешествовать во времени вместе с учеными, узнавая о выдающихся
+                        открытиях человечества!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+            <div class="projects__content ">
+                <div class="projects__info_left text-md-right">
+                    <h3 class="projects__info_heading">"MYMIND"</h3>
+                    <span class="projects__info_info">AR-ПРИЛОЖЕНИЕ</span>
+                    <div class="projects__info_buttons justify-content-end">
+                        <a class="projects__info_button" href="https://apps.apple.com/ua/app/my-mid/id1528349863"><img src="img/img/ios.svg"></a>
+                        <a class="projects__info_button" href="https://play.google.com/store/apps/details?id=com.Demi.MyMID&hl=ru"><img src="img/img/android.svg"></a>
+                    </div>
+                    <p class="projects__info_text">Приложение дополненной реальности помогает лучше сориентироваться в
+                        Музее
+                        и
+                        позволит глубже узнать историю города Днепр. Экспозиция содержит контент, который считывается с
+                        помощью QR-кодов и отображается в приложении.</p>
+                </div>
+                <div class="double-slider">
+                    <div class="upslider">
+                        <div class="upslider__item">
+                            <video controls poster="img/img/videp.svg" preload="none" class="upslider__item_video">
+                                <source src="img/img/vr-video.MP4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="upslider__item"><img src="img/img/slider-img.svg"></div>
+                        <div class="upslider__item"><img src="img/img/slider-img2.svg"></div>
+                    </div>
+                    <div class="downslider">
+                        <div class="downslider__item"><img src="img/img/videp.svg"></div>
+                        <div class="downslider__item"><img src="img/img/slider-img.svg"></div>
+                        <div class="downslider__item"><img src="img/img/slider-img2.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects">
+            <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+            <div class="projects__content">
+
+                <div class="projects__phones">
+                    <p class="projects__phones_phone-small"><img src="img/img/gagarin1.svg"></p>
+                    <p class="projects__phones_phone-mid"><img src="img/img/gagarin2.svg"></p>
+                    <p class="projects__phones_phone-small"><img src="img/img/gagarin3.svg"></p>
+                </div>
+                <div class="projects__info">
+                    <h3 class="projects__info_heading">"GAGARINPARK"</h3>
+                    <span class="projects__info_info">AR-ПРИЛОЖЕНИЕ</span>
+                    <div class="projects__info_buttons">
+                        <a class="projects__info_button" href="https://apps.apple.com/ua/app/gagarin-park/id1480425414"><img src="img/img/ios.svg"></a>
+                        <a class="projects__info_button" href="https://play.google.com/store/apps/details?id=com.Demi.GagarinPark&hl=ru"><img src="img/img/android.svg"></a>
+                    </div>
+                    <p class="projects__info_text">
+                        Приложение дополненной реальности при сканировании наклеек, размещенных в парке Гагарина
+                        в г.Днепр, позволяет увидеть анимированных мультипликационных жителей парка, поиграть
+                        в игры, сделать с ними фотографию и записать видео. Были выпущены тематические апдейты
+                        к Новому году, весенним праздникам и памятным датам исследования космоса.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+            <div class="projects__content ">
+                <div class="projects__info_left text-md-right">
+                    <h3 class="projects__info_heading">
+                        Уроки про космос<br>в виртуальной реальности
+                    </h3>
+                    <span class="projects__info_info">VR</span>
+                    <span></span>
+                    <p class="projects__info_text">
+                        Уроки для шлемов виртуальной реальности на разные темы, от
+                        метеоритов до звезд. Интерактивный
+                        подход помогает детям быстрее запомнить сложную, как кажется на первый взгляд, информацию.
+                        Уроки
+                        создаются специально для обновленного планетария в г.Днепр.
+                    </p>
+                </div>
+                <div>
+                    <video controls poster="img/img/videp.svg" preload="none" class="projects__content_video">
+                        <source src="img/img/VIDEO.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll(".projects__info").forEach(item => item.addEventListener("click", function() {
+                w = window.innerWidth;
+                if (w < 400) {
+                    if (item.children[0].classList.contains("projects__info_heading-active")) {
+                        item.children[0].classList.remove("projects__info_heading-active"); 
+                        item.children[3].classList.remove("projects__info_text-active");
+                        item.children[1].classList.remove("view");
+                        item.children[2].classList.remove("view");
+                    } else {
+                        document.querySelectorAll(".projects__info").forEach(newitem => {
+                            newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[1].classList.remove("view");
+                            newitem.children[2].classList.remove("view");
+                            newitem.children[3].classList.remove("projects__info_text-active");
+                        });
+                        document.querySelectorAll(".projects__info_left").forEach(newitem => {
+                            newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[1].classList.remove("view");
+                            newitem.children[2].classList.remove("view");
+                            newitem.children[3].classList.remove("projects__info_text-active");
+                        });
+                        item.children[0].classList.add("projects__info_heading-active");
+                        item.children[3].classList.add("projects__info_text-active");
+                        item.children[1].classList.add("view");
+                        item.children[2].classList.add("view");
+                    }
+                }
+            }));
+            document.querySelectorAll(".projects__info_left").forEach(item => item.addEventListener("click", function() {
+                w = window.innerWidth;
+                if (w < 400) {
+                    if (item.children[0].classList.contains("projects__info_heading-active")) {
+                        item.children[0].classList.remove("projects__info_heading-active"); 
+                        item.children[3].classList.remove("projects__info_text-active");
+                        item.children[1].classList.remove("view");
+                        item.children[2].classList.remove("view");
+                    } else {
+                        document.querySelectorAll(".projects__info").forEach(newitem => {
+                            newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[1].classList.remove("view");
+                            newitem.children[2].classList.remove("view");
+                            newitem.children[3].classList.remove("projects__info_text-active");
+                        });
+                        document.querySelectorAll(".projects__info_left").forEach(newitem => {
+                            newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[1].classList.remove("view");
+                            newitem.children[2].classList.remove("view");
+                            newitem.children[3].classList.remove("projects__info_text-active");
+                        });
+                        item.children[0].classList.add("projects__info_heading-active");
+                        item.children[1].classList.add("view");
+                        item.children[2].classList.add("view");
+                        item.children[3].classList.add("projects__info_text-active");
+                    }
+                }
+            }));
+        </script>
+        <section class="deminews">
+            <a name="news"></a>
+            <h2 class="deminews__heading">ДЕМИ В НОВОСТЯХ</h2>
+            <div class="deminews__group">
+                <div class="deminews__group_new">
+                    <h4 class="deminews__group_link">dv-gazeta.info</h4>
+                    <p class="deminews__group_info">
+                        Второкурсник ДНУ
+                        внедряет образовательный
+                        стартап</p>
+                    <p class="deminews__group_img"><img src="img/img/new1.svg"></p>
+                </div>
+                <div class="deminews__group_new">
+                    <h4 class="deminews__group_link">gorod.dp.ua</h4>
+                    <p class="deminews__group_info">
+                        Люди, способные изменить мир:
+                        стартапы от днепровских
+                        изобретателей</p>
+                    <p class="deminews__group_img"><img src="img/img/new2.svg"></p>
+                </div>
+                <div class="deminews__group_new">
+                    <h4 class="deminews__group_link">dp.vgorode.ua</h4>
+                    <p class="deminews__group_info">
+                        Захвати смартфон:
+                        как поиграть с виртуальными
+                        космическими героями</p>
+                    <p class="deminews__group_img"><img src="img/img/new3.svg"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="partnership">
+            <a name="cases"></a>
+            <h2 class="partnership__heading">МЫ СОЗДАЕМ НЕ ПРОЕКТЫ, А ПАРТНЕРСТВО</h2>
+            <div class="partnership__partners">
+                <img src="img/img/dnu.svg" title="ДНУ">
+                <img src="img/img/nooplanet.svg" title="NOOSPHERE Planetarium">
+                <img src="img/img/nooschool.svg" title="NOOSPHERE Engineering School">
+                <img src="img/img/gagarin.svg" title="GagarinPark">
+                <img src="img/img/museum.svg" title="Музей історії Дніпра">
+            </div>
+        </section>
+        <section class="about-us">
+            <a name="contacts"></a>
+            <div class="footer-form">
+                <div class="brand">
+
+                    <p class="brand__logo"> <img src="img/img/logo_2.svg" height="150" width="200" alt="логотип">
+                    </p>
+
+                    <p class="brand__heading">ДАВАЙТЕ СОЗДАВАТЬ<br>ВМЕСТЕ!</p>
+                </div>
+                <div class="callback">
+
+                    <div class="callback__info">
+                        <figure>
+                            <p><img class="callback__info_avatar" src="img/img/anna.svg"></p>
+                            <figcaption class="callback__info_sign">Панова Аня<br>координатор проекта</figcaption>
+                        </figure>
+                        <nav>
+                            <ul class="callback__socials">
+                                <li><a href="mailto:panovaal1905@gmail.com" class="callback__socials_social"></a></li>
+                                <li><a href="tg://resolve?domain=panovana" class="callback__socials_social callback__socials_telegram"></a></li>
+                                <li><a href="https://join.skype.com/invite/nuIRe2I1MPCj" class="callback__socials_social callback__socials_s"></a></li>
+                                <li><a href="tel:+380669796345" class="callback__socials_social callback__socials_phone"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <form action="#" class="callback__form">
+                            <p><input class="callback__form_input" aria-label="Поле для ввода имени" type="text"
+                                    placeholder="ИМЯ" required></p>
+                            <p><input class="callback__form_input" aria-label="Поле для ввода компании" type="text"
+                                    placeholder="КОМПАНИЯ" required></p>
+                            <p><input class="callback__form_input" aria-label="Поле для ввода электронной почты"
+                                    type="text" placeholder="E-MAIL" required></p>
+                            <p><input class="callback__form_input" aria-label="Поле для ввода телефона" type="tel"
+                                    placeholder="ТЕЛЕФОН" required></p>
+                            <p><textarea class="callback__form_input" aria-label="Поле для сообщения" rows="1"
+                                    name="text" placeholder="СООБЩЕНИЕ"></textarea></p>
+                            <div class="callback__form_check">
+                                <input type="checkbox" id="scales" name="scales" checked>
+                                <label class="callback__form_checkbox-text" for="scales">согласен с условиями обработки
+                                    личных данных</label>
+                            </div>
+                            <p><input class="callback__form_button" type="submit" value="ОТПРАВИТЬ"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__heading">
+                    <p>КОНТАКТЫ</p>
+                    <div class="footer__logo-block">
+                        <img class="footer__logo" src="img/img/footer-logo.svg">
+                        <nav>
+                            <ul class="footer__socials">
+                                <li><a href="https://www.facebook.com/demistudio.ua/" target="_blank"><img class="footer__socials_img" src="img/img/fb.svg" alt="facebook"></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/demistudio.ua/" target="_blank"><img class="footer__socials_img" src="img/img/inst.svg" alt="instagram"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info_address">
+                        <p class="footer__info_text"><a href="https://goo.gl/maps/1M2aW4AGxTv3Rpm77" target="_blank" title="Поиск на карте">Украина, <br>
+                            Днепр, ул. Научная, 13</a>
+                        </p>
+                        <p>
+                            <a href="tel:+380669796345" title="+380669796345">+380669796345</a><br>
+                            <a href="mailto:demiurgevr@gmail.com" title="demiurgevr@gmail.com">demiurgevr@gmail.com</a>
+                        </p>
+                    </div>
+                    <div><img class="footer__info_nooschool" src="img/img/nooschool.svg" title="NOOSPHERE Engineering school"></div>
+                    <div class="footer__info_startup">
+                        <p>Стартап “DEMI” <br>
+                            создан на базе <br>
+                            Noosphere <br>
+                            Engineering School.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="css/slick-carousel/slick/slick.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
