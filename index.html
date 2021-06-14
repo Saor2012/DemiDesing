@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Demi</title>
+    <link rel="icon" href="img/img/logo_Demi_rocket.PNG">
 </head>
 
 <body class="bg ">
@@ -38,25 +39,26 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class=" ">
+                    <li class="">
                         <a class="active menu__list_item" aria-current="page" href="#projects">ПРОЕКТЫ</a>
                     </li>
                     <li class="">
-                        <a class=" menu__list_item " href="#cases">СЕРВИСЫ</a>
+                        <a class=" menu__list_item " href="#services">СЕРВИСЫ</a>
                     </li>
                     <li class="">
-                        <a class=" menu__list_item " href="#cases">ГОТОВЫЕ РЕШЕНИЯ</a>
+                        <a class=" menu__list_item " href="#solutions">ГОТОВЫЕ РЕШЕНИЯ</a>
                     </li>
-                    <li class=" ">
+                    <li class="">
                         <a class="menu__list_item" href="#news">DEMI NEWSROOM</a>
                     </li>
-                    <li class=" ">
+                    <li class="">
                         <a class="menu__list_item" href="#contacts">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <button id="backToTop" title="На верх"><img src="img/img/arrow-top.svg" alt="Top" height="40"></button>
     <!--Конец меню навигации-->
     <div class="container-fluid">
         <!--РАЗРАБОТКА РЕШЕНИЙ В AR И VR-->
@@ -102,13 +104,13 @@
                 <div>
                     <figure class="whyweare__group_block">
                         <p class="whyweare__group_img"><img src="img/img/price.svg"></p>
-                        <button class="whyweare__group_button">цена</button>
+                        <div class="whyweare__group_button">цена</div>
                         <figcaption class="whyweare__group_text">Цены за разроботку проекта стартуют от 2000$
                         </figcaption>
                     </figure>
                     <figure class="whyweare__group_block">
                         <p class="whyweare__group_img"><img src="img/img/team.svg" height="200px"></p>
-                        <button class="whyweare__group_button">команда</button>
+                        <div class="whyweare__group_button">команда</div>
                         <figcaption class="whyweare__group_text">В нашей команде есть 3-D художники разных направлений,
                             UI/UX-дизайнеры, програмисты и 2-D художники
                         </figcaption>
@@ -117,12 +119,12 @@
                 <div>
                     <figure class="whyweare__group_block">
                         <p class="whyweare__group_img"><img src="img/img/timing.svg" height="200px"></p>
-                    <button class="whyweare__group_button">сроки</button>
+                    <div class="whyweare__group_button">сроки</div>
                     <figcaption class="whyweare__group_text">Максимально быстрый срок выполнения заказов</figcaption>
                 </figure>
                 <figure class="whyweare__group_block">
                     <p class="whyweare__group_img"><img src="img/img/decision.svg" height="200px"></p>
-                    <button class="whyweare__group_button">решение</button>
+                    <div class="whyweare__group_button">решение</div>
                     <figcaption class="whyweare__group_text">У нас есть готовые решения — не нужно реализовывать до 70% функционала </figcaption>
                 </figure>
                 </div>
@@ -164,6 +166,7 @@
 
         <!--Мы создаем сервисы-->
         <section class="services">
+            <a name="services"></a>
             <h2 class="services__heading">МЫ СОЗДАЁМ СЕРВИСЫ</h2>
             <p class="services__button">AR</p>
             <div class="services__name">
@@ -244,7 +247,7 @@
     </div>
     <!--Готовые решения-->
     <section class="solutions">
-        <h2 class="solutions__heading">ГОТОВЫЕ РЕШЕНИЯ</h2>
+        <h2 id="solutions" class="solutions__heading">ГОТОВЫЕ РЕШЕНИЯ</h2>
         <p class="solutions__info">
             У нас вы сможете купить полностью готовые
             кейсы, со всевозможными проработанными деталями.
@@ -432,39 +435,98 @@
         <section class="deminews">
             <a name="news"></a>
             <h2 class="deminews__heading">ДЕМИ В НОВОСТЯХ</h2>
-            <div class="deminews__group">
-                <div class="deminews__group_new">
-                    <h4 class="deminews__group_link">dv-gazeta.info</h4>
-                    <p class="deminews__group_info">
-                        Второкурсник ДНУ
-                        внедряет образовательный
-                        стартап</p>
-                    <p class="deminews__group_img"><img src="img/img/new1.svg"></p>
+            <div class="news-double-slider" data-ride="carousel">
+                <div class="news-upslider deminews__group">
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://dv-gazeta.info/dneprnews/vtorokursnik-dnu-vnedryaet-obrazovatelnyiy-startap.html" target="_blank" title="Узнать больше">dv-gazeta.info</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Второкурсник ДНУ
+                            внедряет образовательный
+                            стартап</p>
+                        <p class="deminews__group_img"><img src="img/img/new1.svg"></p>
+                    </div>
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://gorod.dp.ua/news/175438/" target="_blank" title="Узнать больше">gorod.dp.ua</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Люди, способные изменить мир:
+                            стартапы от днепровских
+                            изобретателей</p>
+                        <p class="deminews__group_img"><img src="img/img/new2.svg"></p>
+                    </div>
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://dp.vgorode.ua/news/sobytyia/408682-zakhvaty-smartfon-kak-poyhrat-s-vyrtualnymy-kosmycheskymy-heroiamy-v-parke-haharyna/" target="_blank" title="Узнать больше">dp.vgorode.ua</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Захвати смартфон:
+                            как поиграть с виртуальными
+                            космическими героями</p>
+                        <p class="deminews__group_img"><img src="img/img/new3.svg"></p>
+                    </div>
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://gagarinpark.dp.ua/about/ar/" target="_blank" title="Узнать больше">gagarinpark.dp.ua</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Команда Noosphere та студенти Noosphere Engineering School 
+                            вперше в Україні створили студентський парк з доповненою реальністю!</p>
+                        <p class="deminews__group_img"><img src="img/img/new4.jpg"></p>
+                    </div>
+
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://mon.gov.ua/ua/news/studenti-dnu-rozrobili-dodatok-iz-dopovnenoyu-realnistyu-dlya-miscevogo-parku/" target="_blank" title="Узнать больше">mon.gov.ua</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Студенти ДНУ Розробили додаток із доповненою реальністю для місцевого парку</p>
+                        <p class="deminews__group_img"><img src="img/img/new5.jpg"></p>
+                    </div>
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://34.ua/v-dnepre-za-sponsorskie-dengi-rekonstruirovali-polovinu-parka-gagarina_n80837/" target="_blank" title="Узнать больше">34.ua</a>                                
+                        </h4>
+                        <p class="deminews__group_info">
+                            В Днепре за спонсорские деньги реконструировали половину парка Гагарина</p>
+                        <p class="deminews__group_img"><img src="img/img/new6.jpg"></p>
+                    </div>
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://9-channel.com/2019/09/12/iz-parku-v-kosmos-park-im-gagarina-u-dnipri-onovlyuye-korporatsiya-noosfera-video/" target="_blank" title="Узнать больше">9-channel.com</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Із парку – в космос: парк ім. Гагарина у Дніпрі оновлює корпорація “Ноосфера” (відео)</p>
+                        <p class="deminews__group_img"><img src="img/img/new7.jpg"></p>
+                    </div>
+                    <div class="news-upslider__item deminews__group_new">
+                        <h4 class="deminews__group_link">
+                            <a href="https://11tv.dp.ua/news/dp/20190912-onovlenyj-park-gagarina-sogodni-vidkryvsya-na-terytoriyi-dniprovskogo-naczionalnogo-universytetu.html" target="_blank" title="Узнать больше">11tv.dp.ua</a>
+                        </h4>
+                        <p class="deminews__group_info">
+                            Оновлений парк Гагаріна сьогодні відкрився на території Дніпровського національного університету</p>
+                        <p class="deminews__group_img"><img src="img/img/new8.jpg"></p>
+                    </div>
                 </div>
-                <div class="deminews__group_new">
-                    <h4 class="deminews__group_link">gorod.dp.ua</h4>
-                    <p class="deminews__group_info">
-                        Люди, способные изменить мир:
-                        стартапы от днепровских
-                        изобретателей</p>
-                    <p class="deminews__group_img"><img src="img/img/new2.svg"></p>
-                </div>
-                <div class="deminews__group_new">
-                    <h4 class="deminews__group_link">dp.vgorode.ua</h4>
-                    <p class="deminews__group_info">
-                        Захвати смартфон:
-                        как поиграть с виртуальными
-                        космическими героями</p>
-                    <p class="deminews__group_img"><img src="img/img/new3.svg"></p>
-                </div>
+                <!--<div class="news-downslider">
+                    <div class="news-downslider__item"><img src="img/img/new1.svg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new2.svg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new3.svg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new4.jpg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new5.jpg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new6.jpg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new7.jpg"></div>
+                    <div class="news-downslider__item"><img src="img/img/new8.jpg"></div>
+                </div>-->
             </div>
         </section>
 
         <section class="partnership">
-            <a name="cases"></a>
             <h2 class="partnership__heading">МЫ СОЗДАЕМ НЕ ПРОЕКТЫ, А ПАРТНЕРСТВО</h2>
             <div class="partnership__partners">
-                <a href="http://www.dnu.dp.ua/" target="_blank"><img src="img/img/dnu.svg" title="ДНУ"></a>
+                <a href="http://www.dnu.dp.ua/" target="_blank"><img src="img/img/dnu.png" title="ДНУ"></a>
                 <a href=" https://planetarium.com.ua/uk/" target="_blank"><img src="img/img/nooplanet.svg" title="NOOSPHERE Planetarium"></a>
                 <a href="https://noosphereengineering.com/" target="_blank"><img src="img/img/nooschool.svg" title="NOOSPHERE Engineering School"></a>
                 <a href="https://gagarinpark.dp.ua/" target="_blank"><img src="img/img/gagarin.svg" title="GagarinPark"></a>
@@ -521,7 +583,7 @@
             </div>
         </section>
 
-
+    
     </div>
     <footer class="footer-bg">
         <div class="container">
@@ -570,7 +632,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
