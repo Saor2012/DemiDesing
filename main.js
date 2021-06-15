@@ -61,13 +61,13 @@ document.querySelector("#backToTop").addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
-
 $('.news-upslider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     asNavFor: '.news-double-slider'
 });
+
 $('.news-double-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -76,6 +76,5 @@ $('.news-double-slider').slick({
     arrows: false,
     focusOnSelect: true
 });
-
 
 

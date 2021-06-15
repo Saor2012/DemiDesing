@@ -15,18 +15,7 @@
 </head>
 
 <body class="bg ">
-    <div class="lengths"></div>
-    <script>
-        let w = 0, h = 0;
-        w = window.innerWidth;
-        h = window.innerHeight;
-        document.querySelector(".lengths").innerHTML = "Width: " + w + "<br>Height: " + h;
-        window.addEventListener("resize", () => {
-            w = window.innerWidth;
-            h = window.innerHeight;
-            document.querySelector(".lengths").innerHTML = "Width: " + w + "<br>Height: " + h;
-        })
-    </script>
+    
     <!--Меню навигации-->
     <nav class="navbar navbar-expand-lg  navbar-dark menu ">
         <div class=" container-fluid">
@@ -384,7 +373,8 @@
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
-                        item.parentElement.parentElement.style.height = "80vh";
+                        if (w < 520) item.parentElement.parentElement.style.height = "auto";
+                        else item.parentElement.parentElement.style.height = "80vh";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
@@ -414,7 +404,8 @@
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
-                        item.parentElement.parentElement.style.height = "80vh";
+                        if (w < 520) item.parentElement.parentElement.style.height = "auto";
+                        else item.parentElement.parentElement.style.height = "80vh";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");

@@ -540,18 +540,18 @@ figure { margin: 0; padding: 0; }
   /*Part 2*/
   .terms__heading { font-size: 24px; margin-bottom: 20px; }
   .terms__ar-vr { font-size: 16px; text-align: justify; color: #fff; padding: 0 10px 0 0; }
-  .terms__ar-vr_ar { margin-bottom: 20px; }
+  .terms__ar-vr_ar, .services__heading, .services-vr__heading  { margin-bottom: 20px; }
   .whyweare__group div:nth-child(1), .whyweare__group div:nth-child(2) { flex: 0; width: fit-content; } 
   /* Part 3*/
   .services { margin: 100px auto; text-shadow: #000 0 0 5px; }
-  .services__heading {font-size: 32px; }
+  .services__heading { font-size: 32px; }
   .services__name_heading, .services-vr__info_name { font-size: 1.3rem; text-align: center; }
   /*.services__name_text { font-size: 18px; text-align: justify; }*/
   .services__name_text { animation: all 1s; }
   .services-vr { margin: 100px auto 0 auto; }
   /*.services-vr__heading { font-size: 32px; }*/
   /*.services-vr__info_name { font-size: 24px; }*/
-  .services-vr__info { margin-top: 40px; }
+  .services-vr__info { margin-top: 20px; }
   .services-vr__info_text { font-size: 18px; text-align: justify; }
   .services__button, .services-vr__button { font-size: 2rem; margin: 10px 0; }
 
@@ -597,6 +597,9 @@ figure { margin: 0; padding: 0; }
   .container-md .slick-list.draggable { padding: 0 30px !important; }
   .services__name_text, .projects__info_text { height: 0; overflow: hidden; }
   .services__name_text-active, .projects__info_text-active { animation: drop_down_text 0.5s ease-in-out; height: fit-content; }
+
+  .news-double-slider .news-upslider__item { margin: 10px 20px; }
+  .news-double-slider .news-upslider__item .deminews__group_img { margin: 20px auto 0; }
 }
 @media (min-width: 320px) and (max-width: 950px) {
   /*Part 2*/
@@ -631,6 +634,8 @@ figure { margin: 0; padding: 0; }
   .callback { display: flex; flex-direction: column;
     align-items: center; padding: 10px; 
   } 
+  .news-double-slider { width: 320px; }
+  .news-double-slider .news-upslider { width: 300px; }
 }
 @media (max-width: 540px) {
   .whyweare__group { max-width: 300px; } 
