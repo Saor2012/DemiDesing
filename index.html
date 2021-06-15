@@ -15,6 +15,18 @@
 </head>
 
 <body class="bg ">
+    <div class="lengths"></div>
+    <script>
+        let w = 0, h = 0;
+        w = window.innerWidth;
+        h = window.innerHeight;
+        document.querySelector(".lengths").innerHTML = "Width: " + w + "<br>Height: " + h;
+        window.addEventListener("resize", () => {
+            w = window.innerWidth;
+            h = window.innerHeight;
+            document.querySelector(".lengths").innerHTML = "Width: " + w + "<br>Height: " + h;
+        })
+    </script>
     <!--Меню навигации-->
     <nav class="navbar navbar-expand-lg  navbar-dark menu ">
         <div class=" container-fluid">
@@ -204,9 +216,10 @@
         <script>
             document.querySelectorAll(".services__name_block").forEach(item => item.addEventListener("click", function() {
                 w = window.innerWidth;
-                if (w < 400) {
-                    if (item.children[1].classList.contains("services__name_text-active")) item.children[1].classList.remove("services__name_text-active"); 
-                    else  {
+                if (w < 1030) {
+                    if (item.children[1].classList.contains("services__name_text-active")) {
+                        item.children[1].classList.remove("services__name_text-active");                      
+                    } else {
                         document.querySelectorAll(".services__name_block").forEach(newitem => {
                             newitem.children[1].classList.remove("services__name_text-active");
                         });
@@ -297,7 +310,7 @@
                     <div class="upslider">
                         <div class="upslider__item">
                             <video controls poster="img/img/videp.svg" preload="none" class="upslider__item_video">
-                                <source src="img/img/vr-video.MP4" type="video/mp4">
+                                <source src="img/img/vr-video.MP4.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="upslider__item"><img src="img/img/slider-img.svg"></div>
@@ -365,12 +378,13 @@
         <script>
             document.querySelectorAll(".projects__info").forEach(item => item.addEventListener("click", function() {
                 w = window.innerWidth;
-                if (w < 400) {
+                if (w < 1030) {
                     if (item.children[0].classList.contains("projects__info_heading-active")) {
                         item.children[0].classList.remove("projects__info_heading-active"); 
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
+                        item.parentElement.parentElement.style.height = "80vh";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
@@ -388,17 +402,19 @@
                         item.children[3].classList.add("projects__info_text-active");
                         item.children[1].classList.add("view");
                         item.children[2].classList.add("view");
+                        item.parentElement.parentElement.style.height = "fit-content";
                     }
                 }
             }));
             document.querySelectorAll(".projects__info_left").forEach(item => item.addEventListener("click", function() {
                 w = window.innerWidth;
-                if (w < 400) {
+                if (w < 1030) {
                     if (item.children[0].classList.contains("projects__info_heading-active")) {
                         item.children[0].classList.remove("projects__info_heading-active"); 
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
+                        item.parentElement.parentElement.style.height = "80vh";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
@@ -416,6 +432,7 @@
                         item.children[1].classList.add("view");
                         item.children[2].classList.add("view");
                         item.children[3].classList.add("projects__info_text-active");
+                        item.parentElement.parentElement.style.height = "fit-content";
                     }
                 }
             }));
