@@ -228,14 +228,14 @@ h2.whyweare__heading, h2.services__heading,
         text-align: center;
         padding: 0px 18px;
         text-shadow: #96fffd 0 0 30px*/
+.projects__info_heading .projects__info_heading_img { display: none; }
 .projects__info_info { height: auto; width: fit-content;
   font-size: 1.8rem; background-color: transparent;
   font-weight: normal; border: 1px solid #96fffd;
   border-radius: 15px; text-align: center;
-  padding: 0px 18px; text-shadow: #96fffd 0 0 20px; 
-}
+  padding: 0px 18px; text-shadow: #96fffd 0 0 20px; }
   
-.projects__info_buttons { display: flex; margin: 30px 0;
+.projects__info_buttons { display: flex; margin: 30px 0; 
   justify-content: end; 
 }
  
@@ -306,7 +306,7 @@ section.partnership { margin-top: 80px; }
 .callback div:nth-child(1), .callback div:nth-child(2) {
   flex: 1 0 50%;
 }
-  
+.callback__info figure p { display: flex; flex-direction: column; align-items: center; }
   .callback__info_avatar {
     height: 200px;
     width: 200px; }
@@ -516,11 +516,12 @@ figure { margin: 0; padding: 0; }
 .projects__content_video { width: 500px; height: 528px; margin: -30px 30px 0 0; }
 /* @media */
 @media (min-width: 320px) and (max-width: 520px) {
-  /*.bg { background: url("../img/img/bg-test1.png") linear-gradient() }*/
+  .bg { background: linear-gradient(#DB3CBA, 5%, #074CE6, 20%, #FC97AD, 30%, #000, 35%, #DB3CBA, 50%, #074CE6, 70%, #FC97AD, 85%, #96FFFD); }
   .container-fluid > section { height: auto; }
   /*.container-fluid { margin-top: 100px; }*/
   .slick-slider__test img { width: 260px; margin: 0 auto; }
   .slick-slider__test.slick-current { transform: scale(1.1); }
+  section.deminews, section.partnership, section.about-us { margin-top: 120px; }
   /*Перенестикнопки,зробити їх менше
   Зменшити розміри зображень
   додати анімаціюдля переходів в розділі проектів та інші*/
@@ -543,11 +544,11 @@ figure { margin: 0; padding: 0; }
   .solution-dev__socials_facebook img, .solution-dev__socials_instagram img { height: 25px; }
   /*Part 2*/
   .terms__heading { font-size: 24px; margin-bottom: 20px; }
-  .terms__ar-vr { font-size: 16px; text-align: justify; color: #fff; padding: 0 10px 0 0; }
+  .terms__ar-vr { font-size: 16px; text-align: justify; color: #fff; padding: 0; }
   .terms__ar-vr_ar, .services__heading, .services-vr__heading  { margin-bottom: 20px; }
   .whyweare__group div:nth-child(1), .whyweare__group div:nth-child(2) { flex: 0; width: fit-content; } 
   /* Part 3*/
-  .services { margin: 100px auto; text-shadow: #000 0 0 5px; }
+  .services { margin: 80px auto; text-shadow: #000 0 0 5px; }
   .services__heading { font-size: 32px; }
   .services__name_heading, .services-vr__info_name { font-size: 1.3rem; text-align: center; }
   /*.services__name_text { font-size: 18px; text-align: justify; }*/
@@ -560,10 +561,11 @@ figure { margin: 0; padding: 0; }
   .services__button, .services-vr__button { font-size: 2rem; margin: 10px 0; }
 
   .solutions { margin: 100px auto 0 auto; }
+  .solutions__heading, .solutions__info, .solutions__list { margin: 0 10px; }
   /*.solutions__heading { font-size: 32px; }*/
-  .solutions__info { font-size: 14px; }
+  .solutions__info { font-size: 14px; margin: 10px; }
   .solutions__list_item { font-size: 20px; padding: 15px 0; }
-  .projects { margin: 60px 0 0; } 
+  .projects { margin: 120px 0 0 0; } 
   .container-md { width: 100%; }
   .projects__content { margin: 0; flex-wrap: wrap; } 
   .projects__heading { font-size: 32px; margin-bottom: 10px; } 
@@ -574,7 +576,6 @@ figure { margin: 0; padding: 0; }
   .projects__info_left { margin: 0 auto; }
   .projects__info, .projects__info_left { margin: 0 0 15px; text-align: center; overflow: hidden; }  
   .projects__info_heading { font-size: 22px; text-align: center; padding: 10px 0;} 
-  .projects__info_heading-active {  }
   .projects__info_info { display: none; font-size: 18px; text-align: center; margin: 10px auto; transition: 0.3s; } 
   .projects__info_buttons { display: none; padding: 10px 0; margin: 15px 0; justify-content: center; transition: 0.5s; } 
   .projects__info_button { width: 110px; }  
@@ -645,6 +646,20 @@ figure { margin: 0; padding: 0; }
   } 
   .news-double-slider { width: 320px; }
   .news-double-slider .news-upslider { width: 300px; }
+  /*.projects__info_heading:before { content: ''; display: block; background: url("../img/img/Double right arrow.svg"); 
+    background-size: contain; width: 20px; height: 20px; float: left; margin: 2px -15px 0 0; 
+  }*/
+  .projects__info_heading_img { display: block; width: 20px; height: 20px; float: left; margin: 2px -8px 0 0; transition: all 0.3s ease-in; }
+  .projects__info_heading_img-active { transform: rotate(90deg); }
+}
+@media (min-width: 360px) and (min-height: 640px) {
+  section.deminews, section.partnership, section.about-us { margin-top: 100px; }
+  .news-double-slider .news-upslider { min-width: 320px; padding: 0 10px; }
+  .news-double-slider .news-upslider__item .deminews__group_img img { width: 270px; }
+}
+@media (min-width: 375px) and (min-height: 667px) {
+  .news-double-slider .news-upslider { min-width: 340px; padding: 0 10px; }
+  .news-double-slider .news-upslider__item .deminews__group_img img { width: 290px; }
 }
 @media (min-width: 414px) and (min-height: 896px) {
   .services { margin-top: 0px; }
@@ -653,7 +668,10 @@ figure { margin: 0; padding: 0; }
   section.deminews, section.partnership, section.about-us { margin-top: 120px; }
   .news-double-slider { width: 100%; }
   .news-double-slider .news-upslider { min-width: 380px; padding: 0 10px; }
-  .news-double-slider .news-downslider { width: 100%; }
+  .news-double-slider .news-downslider { width: 100%; }  
+}
+@media (max-width: 540px) {
+  .whyweare__group { max-width: 300px; } 
   .news-double-slider .news-upslider__item .deminews__group_img,
   .news-double-slider .news-upslider__item .deminews__group_info,
   .news-double-slider .news-upslider__item .deminews__group_link { width: 100%; }
@@ -662,11 +680,7 @@ figure { margin: 0; padding: 0; }
   .slick-next { margin-right: 10px; }
   .slick-prev { margin-left: 10px; }
   .slick-next, .slick-prev { width: 40px; height: 40px; }
-
   .callback__form_input { width: 100%; }
-}
-@media (max-width: 540px) {
-  .whyweare__group { max-width: 300px; } 
 }
 @media (min-width: 576px) and (max-width: 830px) {
   .projects__phones_phone-mid { width: 180px; height: 360px;

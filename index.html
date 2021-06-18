@@ -274,7 +274,7 @@
                     <p class="projects__phones_phone-small"><img src="img/img/phone3.svg"></p>
                 </div>
                 <div class="projects__info">
-                    <h3 class="projects__info_heading">"NOOPLANETARIUM AR"</h3>
+                    <h3 class="projects__info_heading"><img src="img/img/Double right arrow.svg" class="projects__info_heading_img" alt="Double right arrow"/>"NOOPLANETARIUM AR"</h3>
                     <span class="projects__info_info">AR-ПРИЛОЖЕНИЕ</span>
                     <div class="projects__info_buttons">
                         <a class="projects__info_button" href="https://apps.apple.com/ua/app/nooplanet-ar/id1547172115"><img src="img/img/ios.svg"></a>
@@ -294,7 +294,7 @@
             <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
             <div class="projects__content ">
                 <div class="projects__info_left text-md-right">
-                    <h3 class="projects__info_heading">"MyMID"</h3>
+                    <h3 class="projects__info_heading"><img src="img/img/Double right arrow.svg" class="projects__info_heading_img" alt="Double right arrow"/>"MyMID"</h3>
                     <span class="projects__info_info">AR-ПРИЛОЖЕНИЕ</span>
                     <div class="projects__info_buttons justify-content-end">
                         <a class="projects__info_button" href="https://apps.apple.com/ua/app/my-mid/id1528349863"><img src="img/img/ios.svg"></a>
@@ -336,7 +336,7 @@
                     <p class="projects__phones_phone-small"><img src="img/img/gagarin3.svg"></p>
                 </div>
                 <div class="projects__info">
-                    <h3 class="projects__info_heading">"GAGARINPARK"</h3>
+                    <h3 class="projects__info_heading"><img src="img/img/Double right arrow.svg" class="projects__info_heading_img" alt="Double right arrow"/>"GAGARINPARK"</h3>
                     <span class="projects__info_info">AR-ПРИЛОЖЕНИЕ</span>
                     <div class="projects__info_buttons">
                         <a class="projects__info_button" href="https://apps.apple.com/ua/app/gagarin-park/id1480425414"><img src="img/img/ios.svg"></a>
@@ -356,6 +356,7 @@
             <div class="projects__content ">
                 <div class="projects__info_left text-md-right">
                     <h3 class="projects__info_heading">
+                        <img src="img/img/Double right arrow.svg" class="projects__info_heading_img" alt="Double right arrow"/>
                         Уроки про космос<br>в виртуальной реальности
                     </h3>
                     <span class="projects__info_info">VR</span>
@@ -379,8 +380,10 @@
             document.querySelectorAll(".projects__info").forEach(item => item.addEventListener("click", function() {
                 w = window.innerWidth;
                 if (w < 1030) {
+                    console.dir(item.children[0].children[0]);
                     if (item.children[0].classList.contains("projects__info_heading-active")) {
                         item.children[0].classList.remove("projects__info_heading-active"); 
+                        item.children[0].children[0].classList.remove("projects__info_heading_img-active");
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
@@ -389,17 +392,20 @@
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[0].children[0].classList.remove("projects__info_heading_img-active");
                             newitem.children[1].classList.remove("view");
                             newitem.children[2].classList.remove("view");
                             newitem.children[3].classList.remove("projects__info_text-active");
                         });
                         document.querySelectorAll(".projects__info_left").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[0].children[0].classList.remove("projects__info_heading_img-active");
                             newitem.children[1].classList.remove("view");
                             newitem.children[2].classList.remove("view");
                             newitem.children[3].classList.remove("projects__info_text-active");
                         });
                         item.children[0].classList.add("projects__info_heading-active");
+                        item.children[0].children[0].classList.add("projects__info_heading_img-active");
                         item.children[3].classList.add("projects__info_text-active");
                         item.children[1].classList.add("view");
                         item.children[2].classList.add("view");
@@ -412,6 +418,7 @@
                 if (w < 1030) {
                     if (item.children[0].classList.contains("projects__info_heading-active")) {
                         item.children[0].classList.remove("projects__info_heading-active"); 
+                        item.children[0].children[0].classList.remove("projects__info_heading_img-active");
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
@@ -420,17 +427,20 @@
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[0].children[0].classList.remove("projects__info_heading_img-active");
                             newitem.children[1].classList.remove("view");
                             newitem.children[2].classList.remove("view");
                             newitem.children[3].classList.remove("projects__info_text-active");
                         });
                         document.querySelectorAll(".projects__info_left").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
+                            newitem.children[0].children[0].classList.remove("projects__info_heading_img-active");
                             newitem.children[1].classList.remove("view");
                             newitem.children[2].classList.remove("view");
                             newitem.children[3].classList.remove("projects__info_text-active");
                         });
                         item.children[0].classList.add("projects__info_heading-active");
+                        item.children[0].children[0].classList.add("projects__info_heading_img-active");
                         item.children[1].classList.add("view");
                         item.children[2].classList.add("view");
                         item.children[3].classList.add("projects__info_text-active");

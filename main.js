@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     let w = window.innerWidth; 
     let h = window.innerHeight;
     if (w < 500) {
+        //document.querySelector(".container-md .test").innerHTML =+ ``;
         let newsSlider = `<div class="news-upslider deminews__group">
             <div class="news-upslider__item deminews__group_new carousel-item active">
                 <h4 class="deminews__group_link">
