@@ -311,11 +311,12 @@ section.partnership { margin-top: 80px; }
     height: 200px;
     width: 200px; }
   .callback__info_sign { color: #777; text-align: center; }
-  .callback__socials { display: flex; }
-  .callback__socials_social {
+  .callback__socials { display: flex; justify-content: center; }
+  .callback__socials_social { margin: 0 10px; }
+  .callback__socials_social, .callback__socials_social img {
     border: none;
     height: 30px;
-    width: 20px;
+    width: 30px;
     display: inline-block;
     background: url(/dist/img/img/social.png) no-repeat; }
   .callback__socials_telegram {
@@ -869,6 +870,9 @@ figure { margin: 0; padding: 0; }
   .services__button, .services-vr__button { margin: 20px 0; }
   section.partnership { margin: 0 0 50px 0; }
   section.deminews { margin-top: 80px; }
+  .callback__socials_social, .callback__socials_social img {
+    width: 40px; height: 40px;
+  }
 }
 @media (min-width: 1300px) and (max-width: 1470px) and (min-height: 724px) {
   /*Header text style*/
@@ -1029,6 +1033,23 @@ section.partnership { height: fit-content; margin: 100px 0; }
   .callback { max-width: 1080px; }
   .callback__info_avatar { width: 280px; height: 280px; margin: 0 auto; }
   .callback__form_input { padding: 5px 5px 5px 10px; }
+
+  .callback__socials_social, .callback__socials_social img {
+    width: 45px; height: 45px;
+  }
+}
+@media (min-width: 1920px) and (min-height: 900px) {
+  .menu { margin-bottom: 160px; }
+  .whyweare { margin-bottom: 160px; }  
+  section.services { margin: 220px 0; }
+  .projects:first-child { margin-top: 200px; }
+  .container-fluid > section.projects { height: 100vh; }
+  section.deminews, section.partnership { height: 80vh; }
+  section.about-us { margin: 0 0 100px 0; }
+  .partnership__partners img { width: 300px; height: 300px; }
+  .news-double-slider .news-upslider__item .deminews__group_img img { height: 240px; width: 320px; }
+  .news-double-slider .news-upslider__item .deminews__group_img { margin: 30px auto; }
+  .news-double-slider .news-upslider__item { padding: 10px 0 20px; }
 }
 @media (min-width: 1800px) and (max-width: 1920px) and (min-height: 1008px) {
   .solutions { height: 80vh; } 
