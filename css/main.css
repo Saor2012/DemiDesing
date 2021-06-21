@@ -935,6 +935,15 @@ section.partnership { height: fit-content; margin: 100px 0; }
   .news-double-slider .news-upslider { min-width: 1400px; padding: 0 50px; margin: 0 auto;}
   .projects__content_video { margin-top: -40px; }
   section.partnership { margin: 100px 0; }
+
+}
+@media (min-width: 1536px) and (min-height: 722px) {
+  .container-fluid > section.projects { height: 100vh; }
+  .test { margin-top: 200px; }
+  .services { margin-top: 100px; }
+  section.deminews { height: 70vh; margin-top: 160px; }
+  section.partnership { margin: 200px 0 160px; }
+  section.about-us { margin-bottom: 40xp; }
 }
 @media (min-width: 1536px) and (min-height: 864px) {
   section.solution-dev, section.terms { height: 90vh; }
