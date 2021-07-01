@@ -19,7 +19,7 @@ $('.center').slick({
         {
             breakpoint: 576,
             settings: {
-                arrows: false,
+                arrows: true,
                 centerPadding: '5px',
                 centerMode: true,
                 slidesToShow: 1
@@ -62,10 +62,9 @@ document.querySelector("#backToTop").addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
 });
 document.addEventListener("DOMContentLoaded", function(e) {
-    console.log("Yes");
     let w = window.innerWidth; 
     let h = window.innerHeight;
-    if (w < 500) {
+    if (w < 560) {
         //document.querySelector(".container-md .test").innerHTML =+ ``;
         let newsSlider = `<div class="news-upslider deminews__group">
             <div class="news-upslider__item deminews__group_new carousel-item active">
