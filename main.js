@@ -6,25 +6,28 @@ $('.center').slick({
     variableWidth: true,
     centerPadding: '50px',
     slidesToShow: 5,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                arrows: true,
-                centerPadding: '5px',
-                centerMode: true,
-                slidesToShow: 1
-            }
-        }
+    responsive: [ {
+        breakpoint: 576,
+        settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '5px',
+            slidesToShow: 1
+        } }, {
+        breakpoint: 768,
+        settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 2
+        } },  {
+        breakpoint: 1024,
+        settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+        } }
     ]
 });
 $('.deminews__group').slick({

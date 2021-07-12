@@ -230,11 +230,17 @@
                 w = window.innerWidth;
                 if (w < 1030) {
                     if (item.children[1].classList.contains("services__name_text-active")) {
-                        item.children[1].classList.remove("services__name_text-active");                      
+                        item.children[1].classList.remove("services__name_text-active");    
+                        item.children[0].classList.remove("services__name_heading-active");
+                        item.children[0].children[0].classList.remove("services__name_heading_img-active");                  
                     } else {
                         document.querySelectorAll(".services__name_block").forEach(newitem => {
                             newitem.children[1].classList.remove("services__name_text-active");
+                            newitem.children[0].classList.remove("services__name_heading-active");
+                            newitem.children[0].children[0].classList.remove("services__name_heading_img-active"); 
                         });
+                        item.children[0].classList.add("services__name_heading-active");
+                        item.children[0].children[0].classList.add("services__name_heading_img-active");
                         item.children[1].classList.add("services__name_text-active");
                     }
                 }
@@ -277,8 +283,7 @@
     <!--Конец Готовые решения-->
     <div class="container-fluid">
         <section class="projects">
-            <a name="projects"></a>
-            <h2 class="projects__heading">НАШИ ПРОЕКТЫ</h2>
+            <h2 id="projects" class="projects__heading">НАШИ ПРОЕКТЫ</h2>
             <div class="projects__content">
                 <div class="projects__phones">
                     <p class="projects__phones_phone-small"><img src="img/img/phone1.svg"></p>
@@ -399,7 +404,7 @@
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
-                        if (w < 520) item.parentElement.parentElement.style.height = "auto";
+                        if (w < 768) item.parentElement.parentElement.style.height = "auto";
                         else item.parentElement.parentElement.style.height = "80vh";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
@@ -462,8 +467,7 @@
             }));
         </script>
         <section class="deminews">
-            <a name="news"></a>
-            <h2 class="deminews__heading">ДЕМИ В НОВОСТЯХ</h2>
+            <h2 id="news" class="deminews__heading">ДЕМИ В НОВОСТЯХ</h2>
             <div class="news-double-slider" data-ride="carousel">
                 <div class="news-upslider deminews__group">
                     <div class="news-upslider__item deminews__group_new">
