@@ -404,8 +404,7 @@
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
-                        if (w < 768) item.parentElement.parentElement.style.height = "auto";
-                        else item.parentElement.parentElement.style.height = "80vh";
+                        item.parentElement.parentElement.style.height = "auto";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");
@@ -439,8 +438,7 @@
                         item.children[3].classList.remove("projects__info_text-active");
                         item.children[1].classList.remove("view");
                         item.children[2].classList.remove("view");
-                        if (w < 520) item.parentElement.parentElement.style.height = "auto";
-                        else item.parentElement.parentElement.style.height = "80vh";
+                        item.parentElement.parentElement.style.height = "auto";
                     } else {
                         document.querySelectorAll(".projects__info").forEach(newitem => {
                             newitem.children[0].classList.remove("projects__info_heading-active");

@@ -67,7 +67,7 @@ document.querySelector("#backToTop").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function(e) {
     let w = window.innerWidth; 
     let h = window.innerHeight;
-    if (w < 560) {
+    if (w < 768) {
         //document.querySelector(".container-md .test").innerHTML =+ ``;
         let newsSlider = `<div class="news-upslider deminews__group">
             <div class="news-upslider__item deminews__group_new carousel-item active">
